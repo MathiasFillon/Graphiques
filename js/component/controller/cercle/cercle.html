@@ -1,7 +1,37 @@
-<div class="panel panel-default">
-    <div class="panel-heading">CA </div>
-    <div class="panel-body">
-        <canvas id="doughnut" class="chart chart-doughnut" chart-data="$ctrl.data" chart-labels="labels">
-        </canvas>
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#commercial1" aria-controls="commercial1" role="tab" data-toggle="tab">Commercial 1</a></li>
+    <li role="presentation"><a href="#commercial2" aria-controls="commercial2" role="tab" data-toggle="tab">Commercial 2</a></li>
+    <li role="presentation"><a href="#commercial3" aria-controls="3" role="tab" data-toggle="tab">Commercial 3</a></li>
+</ul>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="commercial1">
+        <div class="panel panel-default">
+            <div class="panel-heading">Objectif CA</div>
+            <div class="panel-body">
+                <canvas id="pie" class="chart chart-pie" chart-data="$ctrl.data1" chart-labels="$ctrl.labels">
+                </canvas>
+                <button type="button" ng-click="$ctrl.getNumbers(1)">Randomize It !</button>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="commercial2">
+        <div class="panel panel-default">
+            <div class="panel-heading">Objectif CA</div>
+            <div class="panel-body">
+                <canvas id="pie" class="chart chart-pie" chart-data="$ctrl.data2" chart-labels="$ctrl.labels">
+                </canvas>
+                <button type="button" ng-click="$ctrl.getNumbers(2)">Randomize It !</button>
+            </div>
+        </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="commercial3">
+        <div class="panel panel-default">
+            <div class="panel-heading">Objectif CA</div>
+            <div class="panel-body">
+                <canvas id="pie" class="chart chart-pie" chart-data="$ctrl.data3" chart-labels="$ctrl.labels">
+                </canvas>
+                <button type="button" ng-click="$ctrl.getNumbers(3)">Randomize It !</button>
+            </div>
+        </div>
     </div>
 </div>
