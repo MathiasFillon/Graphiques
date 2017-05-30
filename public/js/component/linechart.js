@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module("components")
+angular.module("app")
   .component("lineChart", {
 
-    templateUrl: './js/component/controller/linechart/linechart.html',
+    templateUrl: '../views/linechart.html',
 
     controller: function () {
       this.labels = ["January", "February", "March", "April", "May", "June", "July"];

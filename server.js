@@ -19,9 +19,15 @@ app.use(bodyParser.urlencoded({
 }));
 
 /**
+ * Declare our static files path
+ */
+app.use(express.static(path.join(__dirname, 'public')));
+
+/**
  * Declare our web service dashboard api
  */
-app.use('/api/dashboard', mainRouter());   //TODO :CHAINER LES ROUTEURS DONT UN DE TRACAGE POUR ENSUITE LE PASSER AU SUIVANT AVEC NEXT
+app.use('/api/dashboard', mainRouter());
+//TODO :CHAINER LES ROUTEURS DONT UN DE TRACAGE POUR ENSUITE LE PASSER AU SUIVANT AVEC NEXT
 
 /**
  * Send special vendors files (outside the public directory)

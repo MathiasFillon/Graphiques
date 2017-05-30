@@ -1,4 +1,4 @@
 angular.module("app", [
-    "components",
+    "ui.router",
     "chart.js"
 ])

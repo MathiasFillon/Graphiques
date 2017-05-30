@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/angular-chart.js/examples/app.css">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar-fixed-side.css" rel="stylesheet">
 </head>
 
 <body ng-app="app">
 
-    <home></home>
+    <ui-view></ui-view>
 
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="node_modules/chart.js/dist/Chart.js"></script>
     <script type="text/javascript" src="node_modules/angular-chart.js/angular-chart.js"></script>
+    <script type="application/javascript" src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/component/index.js"></script>
-    <script type="text/javascript" src="js/component/controller/bv/fichier.js"></script>
-    <script type="text/javascript" src="js/component/controller/cercle/cercle.js"></script>
-    <script type="text/javascript" src="js/component/controller/linechart/linechart.js"></script>
-    <script type="text/javascript" src="js/component/controller/home/home.js"></script>
+    <script type="text/javascript" src="js/component/bv.js"></script>
+    <script type="text/javascript" src="js/component/cercle.js"></script>
+    <script type="text/javascript" src="js/component/linechart.js"></script>
+    <script type="text/javascript" src="js/component/home.js"></script>
+    <script type="text/javascript" src="js/services/info.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
 
 </body>
 

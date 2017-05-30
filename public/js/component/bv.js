@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module("components")
+angular.module("app")
     .component("barreVerticale", {
 
-        templateUrl: './js/component/controller/bv/view.html',
+        templateUrl: '../views/bv.html',
 
         controller: function () {
 

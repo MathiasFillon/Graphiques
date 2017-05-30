@@ -25,8 +25,8 @@ function MainController() {}
 MainController.prototype.getInfo = function (req, res, next) {
   sellsy.api({
     method: 'Infos.getInfos',
-    params: PARAMS
-  }).then(data => {
+    // params: PARAMS
+  }).then((data) => {
     res.json(data);
   }).catch(e => {
     next(e);

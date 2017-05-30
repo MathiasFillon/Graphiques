@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module("components")
+angular.module("app")
     .component("doughnut", {
 
-        templateUrl: './js/component/controller/cercle/cercle.html',
+        templateUrl: '../views/cercle.html',
 
         controller: function () {
 
